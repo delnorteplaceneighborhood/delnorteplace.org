@@ -1,0 +1,38 @@
+{
+  "name": "delnorteplace.org",
+  "version": "1.0.0",
+  "description": "Del Norte Place Neighborhood Site",
+  "author": "icancclearynow",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "local": "nuxt --hostname 0.0.0.0",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate --modern",
+    "lint:check": "eslint --ext .js,.vue .",
+    "lint:fix": "yarn lint:check --fix"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^1.0.4",
+    "@nuxtjs/tailwindcss": "4.2.0",
+    "@tailwindcss/typography": "^0.4.1",
+    "@tailwindcss/ui": "^0.7.2",
+    "autoprefixer": "^10.2.6",
+    "nuxt": "^2.15.7",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4",
+    "vue-feather-icons": "^5.1.0",
+    "vue-lazy-hydration": "2.0.0-beta.4",
+    "vue-simple-icons": "^4.7.0"
+  },
+  "devDependencies": {
+    "eslint": "7.30.0",
+    "eslint-config-node": "4.1.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.1.0",
+    "eslint-plugin-vue": "7.12.1"
+  }
+}
