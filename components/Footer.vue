@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class="bg-green-700 text-white flex-col lg:flex-row lg:pb-8 justify-center">
+    <footer class="bg-green-700 text-white flex-col lg:flex-row lg:py-8 justify-center">
       <div class="container mx-auto flex items-center justify-center ">
         <div class="mb-8 lg:mb-0 left-0">
           <div>
@@ -28,17 +28,19 @@
             >
               Tailwind CSS
             </external-link>
+            .
           </div>
           <div>
-            Domain by
+            Designed by
             <external-link
-              link="https://hover.com"
-              alt="Link to hover.com"
+              link="https://github.com/delnorteplaceneighborhood"
+              alt="Link to Del Norte Place Neighborhood Github Account"
               css="text-white"
             >
-              Hover
+            our community
             </external-link>
-            and deployed
+            .
+            Deployed
             with
             <external-link
               link="https://vercel.com"

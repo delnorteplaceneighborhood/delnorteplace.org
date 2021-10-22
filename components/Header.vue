@@ -23,6 +23,11 @@
               :href="item.link"
               class="font-medium text-white pr-2"
             >{{ item.name }}</a>
+            <external-link
+              link="https://nextdoor.com/neighborhood/delnorteplace--phoenix--az/"
+              alt="Link to vercel.com"
+              css="font-medium text-white pr-2"
+            />
           </div>
           <!-- <RssIcon /> -->
         </div>
@@ -32,10 +37,12 @@
 </template>
 
 <script>
+import ExternalLink from './atoms/ExternalLink.vue';
 // import RssIcon from '@/components/molecules/RssIcon.vue';
 
 export default {
   components: {
+    ExternalLink,
       // RssIcon,
   },
   computed: {
@@ -43,8 +50,16 @@ export default {
         var navigation_details = Array();
 
         navigation_details.push({
-          "name": " Community",
-          "link": "/link-to-neighborhood-site",
+          "name": "📜 History",
+          "link": "/history",
+        });
+        navigation_details.push({
+          "name": "🏘️ Community",
+          "link": "/community",
+        });
+        navigation_details.push({
+          "name": "🤝 Prospective Neighbors",
+          "link": "/welcome",
         });
 
         // console.log(navigation_details);

@@ -14,18 +14,6 @@
       <main class="bg-background-primary">
         <Nuxt />
         <LazyHydrate when-visible>
-          <div class="overflow-x-hidden">
-            <ul class="lg:right-0 flex items-center justify-center">
-              <li>
-                <BottomDots />
-              </li>
-              <li>
-                <BottomDots />
-              </li>
-            </ul>
-          </div>
-        </LazyHydrate>
-        <LazyHydrate when-visible>
           <Footer />
         </LazyHydrate>
       </main>
@@ -37,14 +25,12 @@
 
 
 import LazyHydrate from 'vue-lazy-hydration';
-import BottomDots from '@/components/BottomDots.vue';
 import Footer from '@/components/Footer.vue';
 import Header from '@/components/Header.vue';
 
 export default {
 
   components: {
-    BottomDots,
     Footer,
     Header,
     LazyHydrate,
