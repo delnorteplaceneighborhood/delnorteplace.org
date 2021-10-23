@@ -1,8 +1,8 @@
 <template>
   <div>
-    <footer class="bg-green-700 text-white flex-col lg:flex-row lg:py-8 justify-center">
+    <footer class="bg-green-700 text-white flex-col lg:flex-row py-4 lg:py-8 justify-center">
       <div class="container mx-auto flex items-center justify-center ">
-        <div class="mb-8 lg:mb-0 left-0">
+        <div class="lg:mb-0 left-0">
           <div>
             Created with
             <external-link
@@ -37,7 +37,7 @@
               alt="Link to Del Norte Place Neighborhood Github Account"
               css="text-white"
             >
-            our community
+              our community
             </external-link>
             .
             Deployed

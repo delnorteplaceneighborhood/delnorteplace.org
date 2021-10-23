@@ -1,7 +1,7 @@
 <template>
   <!-- Overflow-x-hidden prevents horizontal scrolling when
       elements are larger than others within the app -->
-  <div>
+  <div class="h-screen">
     <!-- <div class="border-b-2 border-green-700"> -->
     <Hero />
     <!-- </div> -->
