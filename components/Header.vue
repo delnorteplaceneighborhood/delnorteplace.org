@@ -49,38 +49,38 @@ export default {
     secondary_navigation() {
         var navigation_details = Array();
 
-        navigation_details.push({
-          "name": "📝 Minutes",
-          "link": "/minutes",
-        });
-        navigation_details.push({
-          "name": "📰 Newletters",
-          "link": "/newletters",
-        });
-        navigation_details.push({
-          "name": "🏅 Achievements",
-          "link": "/achievements",
-        });
-        navigation_details.push({
-          "name": "📜 History",
-          "link": "/history",
-        });
-        navigation_details.push({
-          "name": "🎟️ Events",
-          "link": "/events",
-        });
-        navigation_details.push({
-          "name": "📅 Calendar",
-          "link": "/calendar",
-        });
-        navigation_details.push({
-          "name": "🏘️ Community",
-          "link": "/community",
-        });
-        navigation_details.push({
-          "name": "🤝 Prospective Neighbors",
-          "link": "/welcome",
-        });
+        // navigation_details.push({
+        //   "name": "📝 Minutes",
+        //   "link": "/minutes",
+        // });
+        // navigation_details.push({
+        //   "name": "📰 Newletters",
+        //   "link": "/newletters",
+        // });
+        // navigation_details.push({
+        //   "name": "🏅 Achievements",
+        //   "link": "/achievements",
+        // });
+        // navigation_details.push({
+        //   "name": "📜 History",
+        //   "link": "/history",
+        // });
+        // navigation_details.push({
+        //   "name": "🎟️ Events",
+        //   "link": "/events",
+        // });
+        // navigation_details.push({
+        //   "name": "📅 Calendar",
+        //   "link": "/calendar",
+        // });
+        // navigation_details.push({
+        //   "name": "🏘️ Community",
+        //   "link": "/community",
+        // });
+        // navigation_details.push({
+        //   "name": "🤝 Prospective Neighbors",
+        //   "link": "/welcome",
+        // });
 
         // console.log(navigation_details);
         return navigation_details;
