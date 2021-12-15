@@ -99,9 +99,18 @@ module.exports = {
             '&:hover': {
               color: '#276749',
             },
+          },  
+          h1: {
+            color: theme('colors.white'),
+          },
+          h2: {
+            color: theme('colors.white'),
+          },
+          h3: {
+            color: theme('colors.white'),
           },
         },
-      },
+      }
     }),
     fontFamily: {
       sans: [

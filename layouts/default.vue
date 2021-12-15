@@ -1,11 +1,12 @@
 <template>
   <div
     class="font-sans text-copy-primary
-           content-wrapper flex flex-col min-h-screen overflow-hidden"
+           content-wrapper flex flex-col min-h-screen overflow-hidden bg-background-primary"
   >
     <!-- LazyHydration interfers with "sticky" header -->
     <div>
-      <Header />
+      <!-- <Header /> -->
+      <HeaderOld />
     </div>
     <transition
       name="fade"
@@ -27,12 +28,15 @@
 import LazyHydrate from 'vue-lazy-hydration';
 import Footer from '@/components/Footer.vue';
 import Header from '@/components/Header.vue';
+import HeaderOld from '@/components/HeaderOld.vue';
+
 
 export default {
 
   components: {
     Footer,
     Header,
+    HeaderOld,
     LazyHydrate,
   },
 };

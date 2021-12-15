@@ -1,4 +1,6 @@
-export default {
+import { defineNuxtConfig } from '@nuxt/bridge'
+
+export default defineNuxtConfig({
   /*
    ** Headers of the page
    */
@@ -49,7 +51,10 @@ export default {
     // { src: '~/node_modules/highlight.js/styles/night-owl.css', lang: 'css' },
     // I also like darcula
   ],
+  tailwindcss: {
+    viewer: false
+  },
   /*
    ** Environment variables
    */
-};
+})
