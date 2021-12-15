@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   /*
    ** Headers of the page
    */
+  bridge: false, // Temporarily disable bridge integration
   target: 'static',
   server: {
     port: 8080,
@@ -41,7 +42,8 @@ export default defineNuxtConfig({
 
   // Build Modules before loading app
   buildModules: [
-    "@nuxtjs/tailwindcss",
+    // "@nuxtjs/tailwindcss",
+    "nuxt-windicss"
   ],
   /*
    ** Global CSS and Highlight.js theme

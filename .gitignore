@@ -228,6 +228,7 @@ npm-debug.log
 
 # Nuxt generate
 dist
+.output
 
 ### VisualStudioCode ###
 .vscode/
