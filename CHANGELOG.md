@@ -14,4 +14,4 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ### Removed
 
-[Unreleased]: https://github.com/delnorteplace/delnorteplace.org/compare/v2021.10.21...HEAD
+[Unreleased]: https://github.com/delnorteplaceneighborhood/delnorteplace.org/compare/v2021.10.21...HEAD
