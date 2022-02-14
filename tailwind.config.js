@@ -10,12 +10,6 @@ module.exports = {
     },
   },
   theme: {
-    linearGradientColors: { // defaults to {}
-      'red': '#f00',
-      'red-blue': ['#f00', '#00f'],
-      'red-green-blue': ['#f00', '#0f0', '#00f'],
-      'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
-    },
     zIndex: {
       '-10': '-10',
       '10': '10',
