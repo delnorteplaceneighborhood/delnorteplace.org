@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import H1 from "~/components/H1"
 import Paragraph from "~/components/Paragraph"
+import IntroImage from "~/components/IntroImage";
 
 const HomeLayout = ({frontmatter, children}) => {
   return (
@@ -11,6 +12,7 @@ const HomeLayout = ({frontmatter, children}) => {
       <HrWrapper>
         <hr />
       </HrWrapper>
+      <IntroImage />
       <ChildrenWrapper>
         {children}
       </ChildrenWrapper>
