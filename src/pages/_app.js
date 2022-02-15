@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import '../styles/globals.css'
 import '../styles/reset.css'
@@ -36,12 +37,16 @@ const theme = {
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <div>
+      <Head>
+        <title>{"Del Norte Place Neighborhood"}</title>
+        <link rel="icon" href="/vercel.svg" />
+      </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
-    </>
+    </div>
   );
 }
 
