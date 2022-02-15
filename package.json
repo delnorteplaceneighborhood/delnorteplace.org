@@ -1,38 +1,33 @@
 {
-  "name": "delnorteplace.org",
-  "version": "1.0.0",
-  "description": "Del Norte Place Neighborhood Site",
-  "author": "icancclearynow",
+  "name": "blog",
   "private": true,
+  "comments": {
+    "devDependencies": "eslint-plugin-import @typescript-eslint/parser eslint-import-resolver-typescript are for jsconfig.json to not be red in the editor navigation pane"
+  },
   "scripts": {
-    "dev": "nuxt",
-    "local": "nuxt --hostname 0.0.0.0",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate --modern",
-    "lint:check": "eslint --ext .js,.vue .",
-    "lint:fix": "yarn lint:check --fix"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@heroicons/vue": "^1.0.4",
-    "@nuxtjs/tailwindcss": "4.2.0",
-    "@tailwindcss/typography": "^0.4.1",
-    "@tailwindcss/ui": "^0.7.2",
-    "autoprefixer": "^10.2.6",
-    "nuxt": "^2.15.7",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.4",
-    "vue-feather-icons": "^5.1.0",
-    "vue-lazy-hydration": "2.0.0-beta.4",
-    "vue-simple-icons": "^4.7.0"
+    "axios": "^0.25.0",
+    "esbuild": "^0.14.18",
+    "mdx-bundler": "^8.0.1",
+    "next": "12.0.9",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "eslint": "7.30.0",
-    "eslint-config-node": "4.1.0",
-    "eslint-config-standard": "16.0.3",
-    "eslint-plugin-import": "2.23.4",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "5.1.0",
-    "eslint-plugin-vue": "7.12.1"
+    "@typescript-eslint/parser": "^5.10.2",
+    "babel-plugin-styled-components": "^2.0.2",
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.9",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }

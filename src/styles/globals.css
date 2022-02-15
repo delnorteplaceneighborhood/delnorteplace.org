@@ -1,0 +1,83 @@
+:root {
+
+  --small-screen: 400px; /* doesn't work in media queries */
+
+  --font-weight-medium: bold;
+
+  /* 
+  Refactoring UI: Color Palettes
+  Palette 16 
+  */
+  /*
+  Primary
+
+  These are the splashes of color that should appear the most 
+  in your UI, and are the ones that determine the overall "look" 
+  of the site. Use these for things like 
+  primary actions, links, navigation items, icons, 
+  accent borders, or text you want to emphasize.
+  */
+  --color-primary-50:  #EAE2F8;
+  --color-primary-100: #CFBCF2;
+  --color-primary-200: #A081D9;
+  --color-primary-300: #8662C7;
+  --color-primary-400: #724BB7;
+  --color-primary-500: #653CAD;
+  --color-primary-600: #51279B;
+  --color-primary-700: #421987;
+  --color-primary-800: #34126F;
+  --color-primary-900: #240754;
+
+  /*
+  Netrals
+
+  These are the colors you will use the most and will 
+  make up the majority of your UI. Use them for most 
+  of your text, backgrounds, and borders, and use the 
+  higher contrast shades for your primary actions. 
+  */
+  --color-neutral-50:  #F0F4F8;
+  --color-neutral-100: #D9E2EC;
+  --color-neutral-200: #BCCCDC;
+  --color-neutral-300: #9FB3C8;
+  --color-neutral-400: #829AB1;
+  --color-neutral-500: #627D98;
+  --color-neutral-600: #486581;
+  --color-neutral-700: #334E68;
+  --color-neutral-800: #243B53;
+  --color-neutral-900: #102A43;
+
+  /*
+  Supporting 
+  Teal (Vivid)
+
+  These are the colors you will use the most and will 
+  make up the majority of your UI. Use them for most 
+  of your text, backgrounds, and borders, and use the 
+  higher contrast shades for your primary actions. 
+  */
+  --color-supporting-50:  #F0FCF9;
+  --color-supporting-100: #C6F7E9;
+  --color-supporting-200: #8EEDD1;
+  --color-supporting-300: #5FE3C0;
+  --color-supporting-400: #2DCCA7;
+  --color-supporting-500: #17B897;
+  --color-supporting-600: #079A82;
+  --color-supporting-700: #048271;
+  --color-supporting-800: #016457;
+  --color-supporting-900: #004440;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+/* Numeric keyword values */
+/* 
+font-weight: 100;
+font-weight: 200;
+font-weight: 300;
+font-weight: 400;// normal
+font-weight: 500;
+font-weight: 600;
+font-weight: 700;// bold
+font-weight: 800;
+font-weight: 900; 
+*/
