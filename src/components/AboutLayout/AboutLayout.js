@@ -4,7 +4,7 @@ import Paragraph from "~/components/Paragraph"
 import IntroImage from "~/components/IntroImage";
 import Title from "~/components/Title";
 
-const HomeLayout = ({frontmatter, children}) => {
+const AboutLayout = ({frontmatter, children}) => {
   return (
     <Wrapper>
       <Title>{frontmatter.title }</Title>
@@ -12,7 +12,6 @@ const HomeLayout = ({frontmatter, children}) => {
       <HrWrapper>
         <hr />
       </HrWrapper>
-      <IntroImage />
       <ChildrenWrapper>
         {children}
       </ChildrenWrapper>
@@ -31,4 +30,4 @@ const HrWrapper = styled.div`
   padding: 0.75em 0 0.25em 0;
 `;
 
-export default HomeLayout;
+export default AboutLayout;
