@@ -7,9 +7,9 @@ import TextLink from "~/components/TextLink";
 const Navigation = ({children}) => {
   return (
     <Wrapper>
-      <LinkWrapper><TextLink href="/" text="Home"/></LinkWrapper>
-      <LinkWrapper><TextLink href="/about" text="About"/></LinkWrapper>
-      <LinkWrapper><TextLink href="/contact" text="Contact"/></LinkWrapper>
+      <LinkWrapper><TextLink href="/">Home</TextLink></LinkWrapper>
+      <LinkWrapper><TextLink href="/about">About</TextLink></LinkWrapper>
+      <LinkWrapper><TextLink href="/contact">Contact</TextLink></LinkWrapper>
       {children}
     </Wrapper>
   )
