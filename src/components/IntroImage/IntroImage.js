@@ -12,6 +12,7 @@ class IntroImage extends Component {
           quality={100}
           layout="fill"
           alt="Avatar"
+          priority
         />
       </Wrapper>
    );

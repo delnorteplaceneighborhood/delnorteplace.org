@@ -3,11 +3,12 @@ import styled from "styled-components";
 import H1 from "~/components/H1"
 import Paragraph from "~/components/Paragraph"
 import IntroImage from "~/components/IntroImage";
+import Title from "~/components/Title";
 
 const HomeLayout = ({frontmatter, children}) => {
   return (
     <Wrapper>
-      <H1>{frontmatter.title }</H1>
+      <Title>{frontmatter.title }</Title>
       <Paragraph>{frontmatter.description}</Paragraph>
       <HrWrapper>
         <hr />
@@ -21,7 +22,6 @@ const HomeLayout = ({frontmatter, children}) => {
 };
 
 const Wrapper = styled.div`
-  /* CSS Goes Here */
 `;
 
 const ChildrenWrapper = styled.div`
