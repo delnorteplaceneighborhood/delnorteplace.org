@@ -17,19 +17,24 @@ const Navigation = ({children}) => {
 
 const Wrapper = styled.div`
   display: inline flex;
+  padding: 40px 0px;
   @media (max-width: 400px) {
+    padding: 20px 0px;
     display: block;
   }
   margin: auto;
   justify-content: center;
   width: 100%;
   text-align: center;
-  padding: 40px 0px;
 
 `;
 
 const LinkWrapper = styled.div`
-  margin: 0px 10px;
+  /* effectively the padding on each navigation item */
+  padding: 0px 30px;
+  @media (max-width: 400px) {
+    padding: 3px 0px;
+  }
 `;
 
 export default Navigation;
