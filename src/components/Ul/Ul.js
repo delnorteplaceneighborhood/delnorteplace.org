@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   li {
     padding: 0 0 0 1em;
   }
+  padding: 0.5em 0em;
 `;
 
 export default Ul;
