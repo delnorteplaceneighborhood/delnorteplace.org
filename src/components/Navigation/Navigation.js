@@ -16,7 +16,7 @@ const Navigation = ({children}) => {
 };
 
 const Wrapper = styled.div`
-  display: flow;
+  display: inline flex;
   @media (max-width: 400px) {
     display: block;
   }
