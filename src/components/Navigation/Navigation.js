@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   }
   margin: auto;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   text-align: center;
   padding: 40px 0px;
 
