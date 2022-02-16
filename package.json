@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "website",
   "private": true,
   "comments": {
     "devDependencies": "eslint-plugin-import @typescript-eslint/parser eslint-import-resolver-typescript are for jsconfig.json to not be red in the editor navigation pane"

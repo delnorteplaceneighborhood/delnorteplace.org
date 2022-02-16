@@ -9,7 +9,7 @@ const name = "Del Norte Place Neighborhood Association";
 const Footer = () => {
   return (
     <Wrapper>
-      <div>© 2021-present {name}.</div>
+      <div>© 2022-present {name}.</div>
       <div>All Rights Reserved.</div>
     </Wrapper>
   )
