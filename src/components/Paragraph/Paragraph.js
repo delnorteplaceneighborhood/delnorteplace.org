@@ -19,7 +19,7 @@ const Content = styled.p`
 // Create a <Wrapper> react component that renders a <section> with
 // some padding
 const Wrapper = styled.section`
-  padding: 0.25em 0em;
+  padding: 0.75em 0em;
 `;
 
 export default Paragraph;
