@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }) {
     <div>
       <Head>
         <title>{"Del Norte Place Neighborhood"}</title>
-        <link rel="icon" href="/vercel.svg" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
