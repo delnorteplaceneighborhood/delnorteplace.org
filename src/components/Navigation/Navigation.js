@@ -17,6 +17,9 @@ const Navigation = ({children}) => {
 
 const Wrapper = styled.div`
   display: flow;
+  @media (max-width: 400px) {
+    display: block;
+  }
   margin: auto;
   justify-content: center;
   width: 50%;
