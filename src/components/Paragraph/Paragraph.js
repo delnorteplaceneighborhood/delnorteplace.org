@@ -14,6 +14,9 @@ const Paragraph = ({children}) => {
 const Content = styled.p`
   font-size: 1.25em;
   font-weight: 500; /*slightly bolder than normal */
+  @media (max-width: 400px) {
+    font-size: 1.15em;
+  }
 `;
 
 // Create a <Wrapper> react component that renders a <section> with

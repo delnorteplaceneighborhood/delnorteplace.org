@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const H1 = ({children}) => {
+const Italic = ({children}) => {
   return (
     <Wrapper>
       {children}
@@ -10,11 +10,7 @@ const H1 = ({children}) => {
 };
 
 const Wrapper = styled.div`
-  font-size: 1.4em;
-  font-weight: 700; /* bold */
-  @media (max-width: 400px) {
-    font-size: 1.3em;
-  }
+    font-style: italic;
 `;
 
-export default H1;
+export default Italic;
