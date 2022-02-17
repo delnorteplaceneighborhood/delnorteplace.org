@@ -18,6 +18,10 @@ const Wrapper = styled.div`
   }
   li {
     padding: 0 0 0 1em;
+    margin: 0 0 0 0.25em;
+    @media (max-width: 400px) {
+      margin: 0 0 0 0;
+    }
   }
   padding: 0.5em 0em;
 `;
