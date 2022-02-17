@@ -18,9 +18,10 @@ const Wrapper = styled.div`
     margin: 0 0 0 -0.25em;
   }
   li {
-    padding: 0 0 0 1em;
+    padding: 0 0 0 2em;
     margin: 0 0 0 0.25em;
     @media (max-width: 400px) {
+      padding: 0 0 0 1em;
       margin: 0 0 0 0;
     }
   }
