@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   ${'' /* padding: 1em 0 1em 0; */}
   li::marker {
     font-size: 1.25em;
+    margin: 0 0 0 -0.25em;
   }
   li {
     padding: 0 0 0 1em;
