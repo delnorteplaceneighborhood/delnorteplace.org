@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <div>
       <Navigation />
-      <Title>Hello Neighbor</Title>
+      <Title>Hello, Neighbor</Title>
       <Paragraph>Feel free to reach out if you are current or potential resident, have a question, or need to contact the neighborhood association.</Paragraph>
       <ContactForm />
       <Footer />
