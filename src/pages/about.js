@@ -13,6 +13,7 @@ import H2 from "~/components/H2";
 import H3 from "~/components/H3";
 import Ul from "~/components/Ul";
 import Bold from '~/components/Bold';
+import Italic from '~/components/Italic';
 import AboutLayout from "~/components/AboutLayout";
 import BlockQuote from "~/components/BlockQuote";
 
@@ -33,7 +34,7 @@ export default function About({ aboutData }) {
         <div>
             <Navigation />
             <AboutLayout frontmatter={aboutData.frontmatter}>
-                <MdxAboutComponent components={{ p: Paragraph, h1: H1, h2: H2, h3: H3, ul: Ul, blockquote: BlockQuote, b: Bold, a: TextLink}} />
+                <MdxAboutComponent components={{ p: Paragraph, h1: H1, h2: H2, h3: H3, ul: Ul, blockquote: BlockQuote, b: Bold, i: Italic, a: TextLink}} />
 
             </AboutLayout>
             <Footer />
