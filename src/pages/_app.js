@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { MDXProvider } from '@mdx-js/react';
+import Image from 'next/image'
 import Paragraph from "~/components/Paragraph/";
 import TextLink from "~/components/TextLink/";
 import H1 from "~/components/H1";
