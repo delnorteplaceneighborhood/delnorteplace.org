@@ -1,21 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import Paragraph from "~/components/Paragraph"
-import IntroImage from "~/components/IntroImage";
 import Title from "~/components/Title";
+import Navigation from "~/components/Navigation"
+import Footer from "~/components/Footer"
 
 const HomeLayout = ({frontmatter, children}) => {
   return (
     <Wrapper>
+      <Navigation />
       <Title>{frontmatter.title }</Title>
       <Paragraph>{frontmatter.description}</Paragraph>
       <HrWrapper>
         <hr />
       </HrWrapper>
-      <IntroImage />
       <ChildrenWrapper>
         {children}
       </ChildrenWrapper>
+      <Footer />
     </Wrapper>
   )
 };

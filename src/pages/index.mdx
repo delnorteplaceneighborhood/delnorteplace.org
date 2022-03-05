@@ -1,0 +1,15 @@
+import Layout from "~/components/Layout";
+import IntroImage from "~/components/IntroImage"
+
+export const frontmatter = {
+    title: 'Del Norte Place Historic District',
+    description: 'Phoenix, AZ'
+}
+
+<IntroImage />
+
+The site is undergoing a redesign to better support our current and potential neighbors.
+
+**Thank you for your patience!**
+
+export default ({ children }) => <Layout frontmatter={frontmatter}>{children}</Layout>
