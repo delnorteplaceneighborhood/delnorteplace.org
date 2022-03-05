@@ -10,8 +10,10 @@ const ContactForm = () => {
   });
   const [inputs, setInputs] = useState({
     email: '',
+    phone: '',
     message: '',
     name: '',
+    resident: 'no',
   });
   const handleServerResponse = (ok, msg) => {
     if (ok) {
@@ -23,6 +25,8 @@ const ContactForm = () => {
       setInputs({
         email: '',
         message: '',
+        phone: '',
+        resident: 'no'
       });
     } else {
       setStatus({
@@ -36,6 +40,20 @@ const ContactForm = () => {
       ...prev,
       [e.target.id]: e.target.value,
     }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null },
+    });
+  };
+  const handleRadioOnChange = (e) => {
+    e.persist();
+    setInputs((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value,
+    }));
+    inputs.resident = e.target.value;
+    // console.log(inputs.resident)
     setStatus({
       submitted: false,
       submitting: false,
@@ -82,10 +100,46 @@ const ContactForm = () => {
             type="email"
             name="_replyto"
             placeholder="email@domain.tld"
-            onChange={handleOnChange}
             required
+            onChange={handleOnChange}
             value={inputs.email}
           />
+        </FormInput>
+        <FormInput>
+          <label htmlFor="phone">Phone Number</label>
+          <Input
+            id="phone"
+            type="phone"
+            name="_replyto"
+            placeholder="480-555-1234"
+            onChange={handleOnChange}
+            value={inputs.phone}
+          />
+        </FormInput>
+        <FormInput>
+          <label htmlFor="resident_yes_no">Are you a current Del Norte Place resident?</label>
+            <RadioGroup name="resident_yes_no">
+              <RadioInput
+                id="resident"
+                type="radio"
+                name="resident_yes"
+                onChange={handleRadioOnChange}
+                checked={inputs.resident === 'yes'}
+                value="yes"
+              />
+              <RadioLabel htmlFor="resident_yes">Yes</RadioLabel>
+            </RadioGroup>
+            <RadioGroup>
+              <RadioInput
+                id="resident"
+                type="radio"
+                name="resident_no"
+                onChange={handleRadioOnChange}
+                checked={inputs.resident === 'no'}
+                value="no"
+              />
+              <RadioLabel htmlFor="resident_no">No</RadioLabel>
+            </RadioGroup>
         </FormInput>
         <FormInput>
           <label htmlFor="message">Message</label>
@@ -130,9 +184,22 @@ const Input = styled.input`
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  display: block;
   border: 1px solid #ccc;
   border-radius: 4px;
+`;
+
+const RadioGroup = styled.div`
+  padding: 10px 20px; 
+`;
+
+const RadioLabel = styled.label`
+  width: 45px;
+  display: inline-block;
+  padding: 0 0 0 20px;
+  text-align: left;
+`;
+
+const RadioInput = styled.input`
 `;
 
 const TextArea = styled.textarea`
@@ -163,19 +230,8 @@ const Form = styled.form`
   max-width: 100%;
 `;
 
-const FormInput = styled.section`
-  padding
+const FormInput = styled.div`
+  padding: 6px 0px
 `;
-
-// /* Style inputs */
-// input[type = text], select {
-//   width: 100 %;
-//   padding: 12px 20px;
-//   margin: 8px 0;
-//   display: inline - block;
-//   border: 1px solid #ccc;
-//   border - radius: 4px;
-//   box - sizing: border - box;
-// }
 
 export default ContactForm;
