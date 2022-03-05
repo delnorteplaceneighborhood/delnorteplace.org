@@ -65,7 +65,7 @@ const ContactForm = () => {
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
     axios({
       method: 'POST',
-      url: 'https://formspree.io/f/xdobgerz',
+      url: 'https://formspree.io/f/xqknbyyk',
       data: inputs,
     })
       .then((response) => {
@@ -82,7 +82,7 @@ const ContactForm = () => {
     <Main>
       <Form onSubmit={handleOnSubmit} accept-charset="utf-8">
         <FormInput>
-          <label htmlFor="name">Full Name</label>
+          <RequiredLabel htmlFor="name">Full Name</RequiredLabel>
           <Input
             id="name"
             type="name"
@@ -94,7 +94,7 @@ const ContactForm = () => {
           />
         </FormInput>
         <FormInput>
-          <label htmlFor="email">Email Address</label>
+          <RequiredLabel htmlFor="email">Email Address</RequiredLabel>
           <Input
             id="email"
             type="email"
@@ -117,7 +117,7 @@ const ContactForm = () => {
           />
         </FormInput>
         <FormInput>
-          <label htmlFor="resident_yes_no">Are you a current Del Norte Place resident?</label>
+          <RequiredLabel htmlFor="resident_yes_no">Are you a current Del Norte Place resident?</RequiredLabel>
             <RadioGroup name="resident_yes_no">
               <RadioInput
                 id="resident"
@@ -142,7 +142,7 @@ const ContactForm = () => {
             </RadioGroup>
         </FormInput>
         <FormInput>
-          <label htmlFor="message">Message</label>
+          <RequiredLabel htmlFor="message">Message</RequiredLabel>
           <TextArea
             id="message"
             name="message"
@@ -186,6 +186,13 @@ const Input = styled.input`
   margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
+`;
+
+const RequiredLabel = styled.label`
+  ::after {
+    content: "*";
+    color: red;
+  }
 `;
 
 const RadioGroup = styled.div`
