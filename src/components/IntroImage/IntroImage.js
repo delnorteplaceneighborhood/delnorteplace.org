@@ -8,7 +8,7 @@ class IntroImage extends Component {
     return (
       <Wrapper>
         <Image
-          src="/dnpna-logo-transparent.png"
+          src="/logo/dnpna-logo-transparent.png"
           quality={100}
           layout="fill"
           alt="Avatar"
