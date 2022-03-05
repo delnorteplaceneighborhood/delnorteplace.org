@@ -1,0 +1,11 @@
+import Layout from "~/components/Layout";
+import ContactForm from "~/components/ContactForm";
+
+export const frontmatter = {
+    title: 'Hello, Neighbor',
+    description: 'Feel free to reach out if you are current or potential resident, have a question, or need to contact the neighborhood association.'
+}
+
+<ContactForm />
+
+export default ({ children }) => <Layout frontmatter={frontmatter}>{children}</Layout>
