@@ -9,6 +9,7 @@ const Navigation = ({children}) => {
     <Wrapper>
       <LinkWrapper><TextLink href="/">Home</TextLink></LinkWrapper>
       <LinkWrapper><TextLink href="/about">About</TextLink></LinkWrapper>
+      <LinkWrapper><TextLink href="/accomplishments">ccomplishments</TextLink></LinkWrapper>
       <LinkWrapper><TextLink href="/events">Events</TextLink></LinkWrapper>
       <LinkWrapper><TextLink href="/contact">Contact</TextLink></LinkWrapper>
       {children}
@@ -32,7 +33,7 @@ const Wrapper = styled.div`
 
 const LinkWrapper = styled.div`
   /* effectively the padding on each navigation item */
-  padding: 0px 30px;
+  padding: 0px 15px;
   @media (max-width: 400px) {
     padding: 3px 0px;
   }
