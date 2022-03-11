@@ -27,6 +27,7 @@ html{
 img {
   max-width: 90%;
   margin:0 auto;
+  max-height: 60vh;
 }
 
 @media (max-width: 400px) {
