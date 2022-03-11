@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { MDXProvider } from '@mdx-js/react';
-import Image from 'next/image'
 import Paragraph from "~/components/Paragraph/";
 import TextLink from "~/components/TextLink/";
 import H1 from "~/components/H1";
@@ -23,6 +22,11 @@ html{
   max-width: 80%;
   margin:0 auto;
   padding: 0;
+}
+
+img {
+  max-width: 90%;
+  margin:0 auto;
 }
 
 @media (max-width: 400px) {
@@ -56,7 +60,7 @@ const components = {
   blockquote: BlockQuote,
   b: Bold,
   i: Italic,
-  a: TextLink
+  a: TextLink,
 }
 
 function MyApp({ Component, pageProps }) {
