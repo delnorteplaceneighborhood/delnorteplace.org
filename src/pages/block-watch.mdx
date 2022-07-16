@@ -1,0 +1,19 @@
+import Layout from "~/components/Layout";
+import IntroImage from "~/components/IntroImage"
+
+export const frontmatter = {
+    title: 'Block Watch',
+    description: ''
+}
+
+<IntroImage />
+
+# Block Watch
+
+The Del Norte Place Neighborhood Association has a block watch to foster a sense of community and safety.
+
+The Del Norte Place Block Watch brings neighbors, on each street and each block (16-17th Ave, 15-16th Ave), together to communicate, look out for eachother, and help prevent crime.
+
+> For more information from the City of Phoenix, please see the [City of Phoenix's Block Watch Inforomation](https://www.phoenix.gov/police/resources-information/block-watch-info).
+
+export default ({ children }) => <Layout frontmatter={frontmatter}>{children}</Layout>
