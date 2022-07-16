@@ -1,0 +1,47 @@
+
+
+import Layout from "~/components/Layout";
+import IntroImage from "~/components/IntroImage"
+
+export const frontmatter = {
+    title: 'Welcome to Del Norte Place',
+    description: ''
+}
+
+<IntroImage />
+
+# Welcome to your new neighborhood, Del Norte Place! 
+
+We are happy you purchased a home in our lovely, historic neighborhood. Attached, you will find a
+description of your home according to records obtained by citizens who worked
+on achieving historic designation for Del Norte. This compilation of information
+was done in the early 90’s. It’s fun to see when homes were built, who were the
+original owners, who built the house and what is the architectural style of your
+home. We hope this information will be interesting to you and helpful when you
+decide to make improvements on your home.
+
+Many of us have made changes to our homes over the years, as we strive to keep
+our homes well maintained. According to the City of Phoenix planning
+department, any exterior changes that require a building permit must go through
+the Historic Preservation Office for review. This exterior work would include
+remodeling, new construction, alterations or relocation of a building or structure.
+These are all commonsense strategies for homeowners and neighborhood
+services to ensure that modifications are in keeping with the historic character of
+the area. 
+
+> If you have any specific questions, you can always call the Historic
+Preservation Office at 602-261-8699.
+
+As part of [this packet](/welcome/Welcome-to-Del-Norte-Place.zip), you’ll find an application for the tax exemption for
+residents. This is one of the many benefits to living here! We hope you enjoy
+your new home and that you are able to take part in community events in Del
+Norte. It is a friendly and welcoming community. We’re happy you chose our
+neighborhood!
+
+> Please refer to this [packet of welcome information](/welcome/Welcome-to-Del-Norte-Place.zip), and again, welcome to Del Norte Place!
+
+The Del Norte Historic Preservation Committee.
+
+
+
+export default ({ children }) => <Layout frontmatter={frontmatter}>{children}</Layout>
