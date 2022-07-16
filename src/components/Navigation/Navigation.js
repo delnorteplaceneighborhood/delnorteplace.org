@@ -9,6 +9,7 @@ const Navigation = ({children}) => {
     <Wrapper>
       <LinkWrapper><TextLink href="/">Home</TextLink></LinkWrapper>
       <LinkWrapper><TextLink href="/about">About</TextLink></LinkWrapper>
+      <LinkWrapper><TextLink href="/welcome">Welcome</TextLink></LinkWrapper>
       <LinkWrapper><TextLink href="/accomplishments">Accomplishments</TextLink></LinkWrapper>
       <LinkWrapper><TextLink href="/block-watch">Block watch</TextLink></LinkWrapper>
       <LinkWrapper><TextLink href="/elections">Elections</TextLink></LinkWrapper>
