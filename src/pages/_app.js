@@ -68,7 +68,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <title>{"Del Norte Place Neighborhood"}</title>
+        <title>{"Del Norte Place Historic District"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalStyle />
